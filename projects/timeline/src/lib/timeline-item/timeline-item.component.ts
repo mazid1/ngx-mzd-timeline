@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: '[mzdTimelineItem]',
@@ -6,6 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./timeline-item.component.scss']
 })
 export class TimelineItemComponent implements OnInit {
+
+  @Input() border = true;
 
   constructor() { }
 
