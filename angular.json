@@ -123,6 +123,46 @@
           }
         }
       }
+    },
+    "timeline": {
+      "projectType": "library",
+      "root": "projects/timeline",
+      "sourceRoot": "projects/timeline/src",
+      "prefix": "mzd",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/timeline/tsconfig.lib.json",
+            "project": "projects/timeline/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/timeline/tsconfig.lib.prod.json"
+            }
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/timeline/src/test.ts",
+            "tsConfig": "projects/timeline/tsconfig.spec.json",
+            "karmaConfig": "projects/timeline/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/timeline/tsconfig.lib.json",
+              "projects/timeline/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
     }},
   "defaultProject": "mzd-timeline"
 }
