@@ -1,4 +1,4 @@
-* {
+::ng-deep * {
   box-sizing: border-box;
 }
 
@@ -20,7 +20,7 @@
   }
 
   // container inside timeline
-  .mzd-timeline-container {
+  ::ng-deep .mzd-timeline-container {
     padding: 10px 30px;
     position: relative;
     background-color: inherit;
