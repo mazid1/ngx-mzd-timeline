@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { TimelineContentComponent } from './timeline-content.component';
+import { MzdTimelineContentComponent } from './timeline-content.component';
 
-describe('TimelineContentComponent', () => {
-  let component: TimelineContentComponent;
-  let fixture: ComponentFixture<TimelineContentComponent>;
+describe('MzdTimelineContentComponent', () => {
+  let component: MzdTimelineContentComponent;
+  let fixture: ComponentFixture<MzdTimelineContentComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ TimelineContentComponent ]
+      declarations: [ MzdTimelineContentComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(TimelineContentComponent);
+    fixture = TestBed.createComponent(MzdTimelineContentComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

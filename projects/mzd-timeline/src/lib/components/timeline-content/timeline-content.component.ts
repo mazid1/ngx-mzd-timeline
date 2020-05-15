@@ -6,7 +6,7 @@ import { Component, ElementRef, Input, OnInit, Renderer2, ViewEncapsulation } fr
   styleUrls: ['./timeline-content.component.scss'],
   encapsulation: ViewEncapsulation.None
 })
-export class TimelineContentComponent implements OnInit {
+export class MzdTimelineContentComponent implements OnInit {
 
   @Input() border = true;
 

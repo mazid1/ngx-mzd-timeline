@@ -2,7 +2,7 @@ import {
     AfterViewInit, Component, ContentChildren, OnInit, QueryList, ViewEncapsulation
 } from '@angular/core';
 
-import { TimelineContentComponent } from '../timeline-content/timeline-content.component';
+import { MzdTimelineContentComponent } from '../timeline-content/timeline-content.component';
 
 @Component({
   selector: 'mzd-timeline',
@@ -10,9 +10,9 @@ import { TimelineContentComponent } from '../timeline-content/timeline-content.c
   styleUrls: ['./timeline.component.scss'],
   encapsulation: ViewEncapsulation.None
 })
-export class TimelineComponent implements OnInit, AfterViewInit {
+export class MzdTimelineComponent implements OnInit, AfterViewInit {
 
-  @ContentChildren(TimelineContentComponent) contents: QueryList<TimelineContentComponent>;
+  @ContentChildren(MzdTimelineContentComponent) contents: QueryList<MzdTimelineContentComponent>;
 
   constructor() { }
 
