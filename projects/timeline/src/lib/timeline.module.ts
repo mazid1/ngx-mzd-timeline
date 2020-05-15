@@ -1,8 +1,8 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
-import { TimelineContentComponent } from './timeline-content/timeline-content.component';
-import { TimelineComponent } from './timeline.component';
+import { TimelineContentComponent } from './components/timeline-content/timeline-content.component';
+import { TimelineComponent } from './components/timeline/timeline.component';
 
 @NgModule({
   declarations: [TimelineComponent, TimelineContentComponent],

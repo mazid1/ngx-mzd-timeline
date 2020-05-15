@@ -1,10 +1,8 @@
-import { ThrowStmt } from '@angular/compiler';
 import {
-    AfterViewInit, Component, ContentChildren, ElementRef, OnInit, QueryList, ViewChildren,
-    ViewEncapsulation
+    AfterViewInit, Component, ContentChildren, OnInit, QueryList, ViewEncapsulation
 } from '@angular/core';
 
-import { TimelineContentComponent } from './timeline-content/timeline-content.component';
+import { TimelineContentComponent } from '../timeline-content/timeline-content.component';
 
 @Component({
   selector: 'mzd-timeline',
