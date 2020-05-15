@@ -3,7 +3,7 @@
   "version": 1, 
   "newProjectRoot": "projects",
   "projects": {
-    "mzd-timeline": {
+    "mzd-timeline-app": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -124,7 +124,7 @@
         }
       }
     },
-    "timeline": {
+    "mzd-timeline": {
       "projectType": "library",
       "root": "projects/timeline",
       "sourceRoot": "projects/timeline/src",

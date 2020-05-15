@@ -1,5 +1,5 @@
 {
-  "name": "timeline",
+  "name": "mzd-timeline",
   "version": "0.0.1",
   "peerDependencies": {
     "@angular/common": "^9.0.7",
