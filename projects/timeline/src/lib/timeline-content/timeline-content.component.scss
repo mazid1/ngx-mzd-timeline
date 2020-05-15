@@ -1,0 +1,74 @@
+// content inside timeline
+mzd-timeline-content {
+  display: block;
+  padding: 10px 30px;
+  position: relative;
+  background-color: inherit;
+  width: 50%;
+
+  // if card needed
+  & .mzd-timeline-card {
+    border: 1px solid gray;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    border-radius: 5px;
+    padding: 10px;
+  }
+
+  // circle on the timeline
+  &::after {
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    right: -15px;
+    background: whitesmoke;
+    border: 2px solid orange;
+    top: 15px;
+    border-radius: 50%;
+    z-index: 1;
+    box-sizing: border-box;
+  }
+
+  // content on the left
+  &.left {
+    left: 0;
+
+    // right facing arrow for content on the left side
+    &::before {
+      content: '';
+      position: absolute;
+      height: 0;
+      width: 0;
+      border: medium solid gray;
+      border-width: 5px 20px 5px 10px;
+      border-color: transparent transparent transparent gray;
+      top: 25px;
+      right: 0;
+      z-index: 1;
+    }
+  }
+  
+  // content on the right side
+  &.right {
+    right: -50%;
+
+    // reposition circel for content on the right side
+    &::after {
+      left: -15px;
+    }
+
+    // left facing arrow for content on the right side
+    &::before {
+      content: '';
+      position: absolute;
+      height: 0;
+      width: 0;
+      border: medium solid gray;
+      border-width: 5px 10px 5px 20px;
+      border-color: transparent gray transparent transparent;
+      top: 25px;
+      left: 0;
+      z-index: 1;
+    }
+  }
+}

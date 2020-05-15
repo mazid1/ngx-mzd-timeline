@@ -1,87 +1,20 @@
-::ng-deep * {
+* {
   box-sizing: border-box;
 }
 
-.mzd-timeline {
+mzd-timeline {
   position: relative;
+  display: block;
   width: 100%;
-  margin: 0 auto;
+  padding: 50px 0;
 
   // vertical line
-  &::after {
-    content: '';
+  & .mzd-timeline-line {
     position: absolute;
     top: 0;
-    bottom: 0;
     left: 50%;
+    height: 100%;
     width: 1px;
-    margin-left: 0;
     background: gray;
-  }
-
-  // container inside timeline
-  ::ng-deep .mzd-timeline-container {
-    padding: 10px 30px;
-    position: relative;
-    background-color: inherit;
-    width: 50%;
-
-    // circle on the timeline
-    &::after {
-      content: '';
-      position: absolute;
-      width: 30px;
-      height: 30px;
-      right: -15px;
-      background: whitesmoke;
-      border: 2px solid orange;
-      top: 15px;
-      border-radius: 50%;
-      z-index: 1;
-      box-sizing: border-box;
-    }
-
-    // container on the left
-    &.left {
-      left: 0;
-
-      // right facing arrow for container on the left side
-      &::before {
-        content: '';
-        position: absolute;
-        height: 0;
-        width: 0;
-        border: medium solid gray;
-        border-width: 5px 20px 5px 10px;
-        border-color: transparent transparent transparent gray;
-        top: 25px;
-        right: 0;
-        z-index: 1;
-      }
-    }
-    
-    // container on the right side
-    &.right {
-      right: -50%;
-
-      // reposition circel for container on the right side
-      &::after {
-        left: -15px;
-      }
-
-      // left facing arrow for container on the right side
-      &::before {
-        content: '';
-        position: absolute;
-        height: 0;
-        width: 0;
-        border: medium solid gray;
-        border-width: 5px 10px 5px 20px;
-        border-color: transparent gray transparent transparent;
-        top: 25px;
-        left: 0;
-        z-index: 1;
-      }
-    }
-  }
+  }  
 }
