@@ -71,4 +71,27 @@ mzd-timeline-content {
       z-index: 1;
     }
   }
+
+  // content in xs devices
+  @media screen and (max-width: 599px) {
+    width: 100%;
+    padding-left: 60px;
+
+    // all circles are at the left side
+    &.left::after, &.right::after {
+      left: 15px;
+    }
+
+    // all arrows are left facing
+    &.left::before, &.right::before {
+      left: 30px;
+      border-width: 5px 10px 5px 20px;
+      border-color: transparent gray transparent transparent;
+    }
+
+    // right contents are same as left contents
+    &.right {
+      left: 0;
+    }
+  }
 }

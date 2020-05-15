@@ -16,5 +16,14 @@ mzd-timeline {
     height: 100%;
     width: 1px;
     background: gray;
-  }  
+  }
+
+  // xs devices
+  @media screen and (max-width: 599px) {
+
+    // place the line at the left side
+    & .mzd-timeline-line {
+      left: 30px;
+    }
+  }
 }
