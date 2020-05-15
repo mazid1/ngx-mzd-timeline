@@ -1,6 +1,6 @@
 {
   "$schema": "../../node_modules/ng-packagr/ng-package.schema.json",
-  "dest": "../../dist/timeline",
+  "dest": "../../dist/mzd-timeline",
   "lib": {
     "entryFile": "src/public-api.ts"
   }

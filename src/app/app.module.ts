@@ -1,4 +1,4 @@
-import { TimelineModule } from 'projects/timeline/src/public-api';
+import { TimelineModule } from 'projects/mzd-timeline/src/public-api';
 
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
