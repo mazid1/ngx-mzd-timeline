@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/mzd-timeline",
+            "outputPath": "dist/mzd-timeline-app",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -66,18 +66,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "mzd-timeline:build"
+            "browserTarget": "mzd-timeline-app:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "mzd-timeline:build:production"
+              "browserTarget": "mzd-timeline-app:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "mzd-timeline:build"
+            "browserTarget": "mzd-timeline-app:build"
           }
         },
         "test": {
@@ -114,11 +114,11 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "mzd-timeline:serve"
+            "devServerTarget": "mzd-timeline-app:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "mzd-timeline:serve:production"
+              "devServerTarget": "mzd-timeline-app:serve:production"
             }
           }
         }
