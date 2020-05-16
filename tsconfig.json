@@ -19,9 +19,9 @@
       "dom"
     ],
     "paths": {
-      "timeline": [
-        "dist/timeline/timeline",
-        "dist/timeline"
+      "mzd-timeline": [
+        "dist/mzd-timeline/mzd-timeline",
+        "dist/mzd-timeline"
       ]
     }
   },
