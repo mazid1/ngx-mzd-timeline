@@ -12,9 +12,18 @@
 
     & mzd-timeline-content {
       & .mzd-timeline-card {
-        @include mat-elevation(4);
+        @include mat-elevation(1);
         background-color: map-get($mzd-timeline-background, card) !important;
         color: map-get($mzd-timeline-foreground, base);
+      }
+
+      & .mzd-timeline-border {
+        &:not(.mzd-timeline-card) {
+          @include mat-elevation(1);
+        }
+        & .mat-card {
+          @include mat-elevation(0);
+        }
       }
     }
   }

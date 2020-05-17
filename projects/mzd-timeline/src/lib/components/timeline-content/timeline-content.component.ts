@@ -8,7 +8,8 @@ import { Component, ElementRef, Input, OnInit, Renderer2, ViewEncapsulation } fr
 })
 export class MzdTimelineContentComponent implements OnInit {
 
-  @Input() border = true;
+  @Input() card = true;
+  @Input() border = false;
 
   set left(value: boolean) {
     if (value) {

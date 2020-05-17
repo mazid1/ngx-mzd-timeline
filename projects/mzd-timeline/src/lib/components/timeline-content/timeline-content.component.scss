@@ -8,10 +8,14 @@ mzd-timeline-content {
 
   // if card needed
   & .mzd-timeline-card {
+    padding: 16px;
+    border-radius: 4px;
+  }
+
+  // if border needed
+  & .mzd-timeline-border {
     border: 1px solid gray;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    border-radius: 5px;
-    padding: 10px;
+    border-radius: 4px;
   }
 
   // circle on the timeline
