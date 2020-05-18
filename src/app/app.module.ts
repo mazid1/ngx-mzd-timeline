@@ -8,8 +8,8 @@ import {
   faBell as faRegularBell, faSmileBeam, faSmileWink
 } from '@fortawesome/free-regular-svg-icons';
 import {
-  faAsterisk, faBan, faBell as faSolidBell, faCamera, faCircle, faCloud, faCog, faEnvelopeOpen,
-  faHandPointLeft, faMobile, faMoon, faPlay, faSkating, faSkiing, faSkiingNordic,
+  faAsterisk, faBan, faBell as faSolidBell, faBriefcase, faCamera, faCircle, faCloud, faCog,
+  faEnvelopeOpen, faHandPointLeft, faMobile, faMoon, faPlay, faSkating, faSkiing, faSkiingNordic,
   faSmileBeam as faSmileBeanSolid, faSmileWink as faSmileWinkSolid, faSnowboarding, faSpinner,
   faSquare, faStar, faSun, faSwimmer, faSync
 } from '@fortawesome/free-solid-svg-icons';
@@ -37,6 +37,6 @@ export class AppModule {
       faSync, faPlay, faSun, faMoon, faStar,
       faHandPointLeft, faAsterisk, faCog, faSkating,
       faSkiing, faSkiingNordic, faSnowboarding, faSwimmer,
-      faSolidBell, faRegularBell, faCamera, faBan);
+      faSolidBell, faRegularBell, faCamera, faBan, faBriefcase);
   }
 }
