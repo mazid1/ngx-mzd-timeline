@@ -3,6 +3,7 @@
 @mixin mzd-timeline-theme($theme) {
   $mzd-timeline-primary: map-get($theme, primary);
   $mzd-timeline-accent: map-get($theme, accent);
+  $mzd-timeline-warn: map-get($theme, warn);
   $mzd-timeline-foreground: map-get($theme, foreground);
   $mzd-timeline-background: map-get($theme, background);
   $mzd-timeline-typographyConfig: mat-typography-config();
@@ -24,6 +25,11 @@
         & .mat-card {
           @include mat-elevation(0);
         }
+      }
+
+      &::after {
+        background: map-get($mzd-timeline-primary, text);
+        border: 2px solid map-get($mzd-timeline-accent, text);
       }
     }
   }
