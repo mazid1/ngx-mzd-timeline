@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ThemeService } from './theme.service';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'mzd-timeline';
+
+  constructor(private themeService: ThemeService) { }
+
+  setDarkMode(darkMode: boolean) {
+    this.themeService.setDarkMode(darkMode);
+  }
 }

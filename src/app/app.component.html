@@ -1,60 +1,74 @@
-<div>
-  <div id="mzdAppTitle" style="text-align: center;"><h1>{{ title }} app is running!</h1></div>
-  <mzd-timeline>
-    
-    <mzd-timeline-content>
-      <div>
-        <h1>Title</h1>
-        <hr>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut tempora dolor ullam exercitationem illum enim id maxime sunt eius, neque repellat corporis atque voluptatibus quasi nam necessitatibus odit commodi quisquam?</p>
-      </div>
-      <mzd-icon><fa-icon icon="briefcase"></fa-icon></mzd-icon>
-    </mzd-timeline-content>
-    
-    <mzd-timeline-content [card]="false">
-      <mzd-icon>X</mzd-icon>
-      <mat-card>
-        <mat-card-header>
-          <mat-card-title>
-            This is a Title
-          </mat-card-title>
-          <mat-card-subtitle>
-            20-05-2020
-          </mat-card-subtitle>
-        </mat-card-header>
-        <mat-card-content>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem delectus impedit ipsa ad minima doloribus
-          recusandae modi libero sint illo perferendis, unde, porro voluptate totam assumenda labore quia sit quas?
-        </mat-card-content>
-      </mat-card>
-    </mzd-timeline-content>
+<mat-toolbar color="primary" class="mzd-app-toolbar">
+  <h1 class="mat-headline">{{ title }}</h1>
+  <div style="flex: 1;"></div>
 
-    <mzd-timeline-content [card]="false" [border]="true">
-      <mzd-icon><fa-icon icon="camera"></fa-icon></mzd-icon>
-      <mat-card>
-        <mat-card-header>
-          <mat-card-title>
-            This is a Title
-          </mat-card-title>
-          <mat-card-subtitle>
-            20-05-2020
-          </mat-card-subtitle>
-        </mat-card-header>
-        <mat-card-content>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem delectus impedit ipsa ad minima doloribus
-          recusandae modi libero sint illo perferendis, unde, porro voluptate totam assumenda labore quia sit quas?
-        </mat-card-content>
-      </mat-card>
-    </mzd-timeline-content>
+  <mat-slide-toggle color="accent" (change)="setDarkMode($event.checked)">
+    Dark Mode
+  </mat-slide-toggle>
+</mat-toolbar>
 
-    <mzd-timeline-content [border]="true">
-      <mzd-icon><fa-icon icon="skiing-nordic"></fa-icon></mzd-icon>
-      <div>
-        <h1>Title</h1>
-        <hr>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut tempora dolor ullam exercitationem illum enim id maxime sunt eius, neque repellat corporis atque voluptatibus quasi nam necessitatibus odit commodi quisquam?</p>
-      </div>
-    </mzd-timeline-content>
-    
-  </mzd-timeline>
+<div class="mzd-app-button-container">
+  <button mat-raised-button color="primary">Primary</button>
+  <button mat-raised-button color="accent">Accent</button>
+  <button mat-raised-button color="warn">Warn</button>
 </div>
+
+<div id="mzdAppTitle" style="text-align: center;"><h1>{{ title }} app is running!</h1></div>
+
+<mzd-timeline>
+  
+  <mzd-timeline-content>
+    <div>
+      <h1>Title</h1>
+      <hr>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut tempora dolor ullam exercitationem illum enim id maxime sunt eius, neque repellat corporis atque voluptatibus quasi nam necessitatibus odit commodi quisquam?</p>
+    </div>
+    <mzd-icon><fa-icon icon="briefcase"></fa-icon></mzd-icon>
+  </mzd-timeline-content>
+  
+  <mzd-timeline-content [card]="false">
+    <mzd-icon><strong>X</strong></mzd-icon>
+    <mat-card>
+      <mat-card-header>
+        <mat-card-title>
+          This is a Title
+        </mat-card-title>
+        <mat-card-subtitle>
+          20-05-2020
+        </mat-card-subtitle>
+      </mat-card-header>
+      <mat-card-content>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem delectus impedit ipsa ad minima doloribus
+        recusandae modi libero sint illo perferendis, unde, porro voluptate totam assumenda labore quia sit quas?
+      </mat-card-content>
+    </mat-card>
+  </mzd-timeline-content>
+
+  <mzd-timeline-content [card]="false" [border]="true">
+    <mzd-icon><fa-icon icon="camera"></fa-icon></mzd-icon>
+    <mat-card>
+      <mat-card-header>
+        <mat-card-title>
+          This is a Title
+        </mat-card-title>
+        <mat-card-subtitle>
+          20-05-2020
+        </mat-card-subtitle>
+      </mat-card-header>
+      <mat-card-content>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem delectus impedit ipsa ad minima doloribus
+        recusandae modi libero sint illo perferendis, unde, porro voluptate totam assumenda labore quia sit quas?
+      </mat-card-content>
+    </mat-card>
+  </mzd-timeline-content>
+
+  <mzd-timeline-content [border]="true">
+    <mzd-icon><fa-icon icon="skiing-nordic"></fa-icon></mzd-icon>
+    <div>
+      <h1>Title</h1>
+      <hr>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut tempora dolor ullam exercitationem illum enim id maxime sunt eius, neque repellat corporis atque voluptatibus quasi nam necessitatibus odit commodi quisquam?</p>
+    </div>
+  </mzd-timeline-content>
+  
+</mzd-timeline>

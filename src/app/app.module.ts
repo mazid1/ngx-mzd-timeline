@@ -1,6 +1,10 @@
 import { MzdTimelineModule } from 'projects/mzd-timeline/src/public-api';
 import { NgModule } from '@angular/core';
+import { MatButtonModule } from '@angular/material/button';
 import { MatCardModule } from '@angular/material/card';
+import { MatCommonModule } from '@angular/material/core';
+import { MatSlideToggleModule } from '@angular/material/slide-toggle';
+import { MatToolbarModule } from '@angular/material/toolbar';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FaIconLibrary, FontAwesomeModule } from '@fortawesome/angular-fontawesome';
@@ -24,7 +28,11 @@ import { AppComponent } from './app.component';
     MzdTimelineModule,
     BrowserAnimationsModule,
     FontAwesomeModule,
-    MatCardModule
+    MatCardModule,
+    MatToolbarModule,
+    MatButtonModule,
+    MatCommonModule,
+    MatSlideToggleModule
   ],
   providers: [],
   bootstrap: [AppComponent]

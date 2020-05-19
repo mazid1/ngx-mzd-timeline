@@ -14,8 +14,8 @@
     & mzd-timeline-content {
       & .mzd-timeline-card {
         @include mat-elevation(1);
-        background-color: map-get($mzd-timeline-background, card) !important;
-        color: map-get($mzd-timeline-foreground, base);
+        background-color: mat-color($mzd-timeline-background, card) !important;
+        color: mat-color($mzd-timeline-foreground, base);
       }
 
       & .mzd-timeline-border {
@@ -28,8 +28,12 @@
       }
 
       &::after {
-        background: map-get($mzd-timeline-primary, text);
-        border: 2px solid map-get($mzd-timeline-accent, text);
+        background-color: mat-color($mzd-timeline-background, card);
+        border: 2px solid mat-color($mzd-timeline-accent);
+      }
+
+      mzd-icon {
+        color: mat-color($mzd-timeline-foreground, base);
       }
     }
   }
