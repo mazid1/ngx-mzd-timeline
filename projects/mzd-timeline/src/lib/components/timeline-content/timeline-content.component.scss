@@ -18,12 +18,73 @@ mzd-timeline-content {
     border-radius: 4px;
   }
 
+  // no-alternate style
+  &.no-alternate {
+    width: 100%;
+    
+    // content on the right
+    &.content-right {
+      left: 0;
+      right: auto;
+      padding-left: 60px;
+
+      // circle on the left
+      &::after {
+        left: 15px;
+        right: auto;
+      }
+
+      // icon on the left
+      mzd-icon {
+        left: 23px;
+        right: auto;
+      }
+
+      // left facing arrow
+      &::before {
+        left: 30px;
+        right: auto;
+        border-width: 5px 10px 5px 20px;
+        border-color: transparent gray transparent transparent;
+      }
+    }
+
+    // content on the left
+    &.content-left {
+      left: auto;
+      right: 0;
+      padding-right: 60px;
+
+      // circle on the right
+      &::after {
+        left: auto;
+        right: 15px;
+      }
+
+      // icon on the right
+      mzd-icon {
+        left: auto;
+        right: 23px;
+      }
+
+      // right facing arrow
+      &::before {
+        left: auto;
+        right: 30px;
+        border: medium solid gray;
+        border-width: 5px 20px 5px 10px;
+        border-color: transparent transparent transparent gray;
+      }
+    }
+  }
+
   // circle on the timeline
   &::after {
     content: '';
     position: absolute;
     width: 30px;
     height: 30px;
+    left: auto;
     right: -15px;
     background: whitesmoke;
     border: 2px solid orange;
@@ -36,6 +97,7 @@ mzd-timeline-content {
   // icon inside circle
   mzd-icon {
     position: absolute;
+    left: auto;
     right: -7px;
     top: 21px;
     border-radius: 50%;
@@ -46,8 +108,9 @@ mzd-timeline-content {
   }
 
   // content on the left
-  &.left {
+  &.content-left {
     left: 0;
+    right: auto;
 
     // right facing arrow for content on the left side
     &::before {
@@ -59,23 +122,27 @@ mzd-timeline-content {
       border-width: 5px 20px 5px 10px;
       border-color: transparent transparent transparent gray;
       top: 25px;
+      left: auto;
       right: 0;
       z-index: 1;
     }
   }
   
   // content on the right side
-  &.right {
+  &.content-right {
+    left: auto;
     right: -50%;
 
     // reposition circel for content on the right side
     &::after {
       left: -15px;
+      right: auto;
     }
 
     // repositon icon for content on the right side
     mzd-icon {
       left: -7px;
+      right: auto;
     }
 
     // left facing arrow for content on the right side
@@ -89,6 +156,7 @@ mzd-timeline-content {
       border-color: transparent gray transparent transparent;
       top: 25px;
       left: 0;
+      right: auto;
       z-index: 1;
     }
   }
@@ -99,28 +167,33 @@ mzd-timeline-content {
     padding-left: 60px;
 
     // all circles are at the left side
-    &.left::after, &.right::after {
+    &.content-left::after, &.content-right::after {
       left: 15px;
+      right: auto;
     }
 
-    &.left {
+    &.content-left {
       mzd-icon {
         left: 23px;
+        right: auto;
       }
     }
 
     // all arrows are left facing
-    &.left::before, &.right::before {
+    &.content-left::before, &.content-right::before {
       left: 30px;
+      right: auto;
       border-width: 5px 10px 5px 20px;
       border-color: transparent gray transparent transparent;
     }
 
     // right contents are same as left contents
-    &.right {
+    &.content-right {
       left: 0;
+      right: auto;
       mzd-icon {
         left: 23px;
+        right: auto;
       }
     }
   }

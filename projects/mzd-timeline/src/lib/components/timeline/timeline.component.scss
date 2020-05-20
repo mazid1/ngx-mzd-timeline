@@ -13,9 +13,21 @@ mzd-timeline {
     position: absolute;
     top: 0;
     left: 50%;
+    right: auto;
     height: 100%;
     width: 1px;
     background: gray;
+
+    &.no-alternate {
+      &.left {
+        left: 30px;
+        right: auto;
+      }
+      &.right {
+        left: auto;
+        right: 30px;
+      }
+    }
   }
 
   // xs devices
@@ -24,6 +36,7 @@ mzd-timeline {
     // place the line at the left side
     & .mzd-timeline-line {
       left: 30px;
+      right: auto;
     }
   }
 }

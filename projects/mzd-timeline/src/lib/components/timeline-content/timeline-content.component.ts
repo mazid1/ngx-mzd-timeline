@@ -13,17 +13,25 @@ export class MzdTimelineContentComponent implements OnInit {
 
   set left(value: boolean) {
     if (value) {
-      this.renderer.addClass(this.elementRef.nativeElement, 'left');
+      this.renderer.addClass(this.elementRef.nativeElement, 'content-left');
     } else {
-      this.renderer.removeClass(this.elementRef.nativeElement, 'left');
+      this.renderer.removeClass(this.elementRef.nativeElement, 'content-left');
     }
   }
 
   set right(value: boolean) {
     if (value) {
-      this.renderer.addClass(this.elementRef.nativeElement, 'right');
+      this.renderer.addClass(this.elementRef.nativeElement, 'content-right');
     } else {
-      this.renderer.removeClass(this.elementRef.nativeElement, 'right');
+      this.renderer.removeClass(this.elementRef.nativeElement, 'content-right');
+    }
+  }
+
+  set noAlternate(value: boolean) {
+    if (value) {
+      this.renderer.addClass(this.elementRef.nativeElement, 'no-alternate');
+    } else {
+      this.renderer.removeClass(this.elementRef.nativeElement, 'no-alternate');
     }
   }
 

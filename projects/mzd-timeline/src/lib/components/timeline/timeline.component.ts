@@ -1,7 +1,6 @@
 import {
-    AfterViewInit, Component, ContentChildren, OnInit, QueryList, ViewEncapsulation
+  AfterViewInit, Component, ContentChildren, Input, OnInit, QueryList, ViewEncapsulation
 } from '@angular/core';
-
 import { MzdTimelineContentComponent } from '../timeline-content/timeline-content.component';
 
 @Component({
@@ -12,12 +11,13 @@ import { MzdTimelineContentComponent } from '../timeline-content/timeline-conten
 })
 export class MzdTimelineComponent implements OnInit, AfterViewInit {
 
+  @Input() firstContentSide: 'left' | 'right' = 'left';
+  @Input() alternateSide: boolean = true;
   @ContentChildren(MzdTimelineContentComponent) contents: QueryList<MzdTimelineContentComponent>;
 
   constructor() { }
 
-  ngOnInit(): void {
-  }
+  ngOnInit(): void { }
 
   ngAfterViewInit(): void {
     this.updateContent();
@@ -25,10 +25,25 @@ export class MzdTimelineComponent implements OnInit, AfterViewInit {
 
   private updateContent() {
     if (this.contents) {
-      this.contents.forEach((content, index) => {
-        content.left = (index % 2 === 0);
-        content.right = (index % 2 !== 0);
-      });
+      if (this.alternateSide) {
+        if (this.firstContentSide === 'left') {
+          this.contents.forEach((content, index) => {
+            content.left = (index % 2 === 0);
+            content.right = (index % 2 !== 0);
+          });
+        } else {
+          this.contents.forEach((content, index) => {
+            content.left = (index % 2 !== 0);
+            content.right = (index % 2 === 0);
+          });
+        }
+      } else {
+        this.contents.forEach(content => {
+          content.left = this.firstContentSide === 'left';
+          content.right = this.firstContentSide === 'right';
+        });
+      }
+      this.contents.forEach(content => content.noAlternate = !this.alternateSide);
     }
   }
 

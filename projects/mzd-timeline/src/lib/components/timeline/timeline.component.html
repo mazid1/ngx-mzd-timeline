@@ -1,2 +1,9 @@
-<div class="mzd-timeline-line"></div>
+<div
+  class="mzd-timeline-line"
+  [ngClass]="{
+    'no-alternate': !alternateSide,
+    left: firstContentSide !== 'left',
+    right: firstContentSide !== 'right'
+  }"
+></div>
 <ng-content></ng-content>
