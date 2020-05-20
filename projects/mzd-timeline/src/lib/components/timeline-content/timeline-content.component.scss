@@ -166,6 +166,10 @@ mzd-timeline-content {
     width: 100%;
     padding-left: 60px;
 
+    &.no-alternate {
+      padding-left: 30Px;
+    }
+
     // all circles are at the left side
     &.content-left::after, &.content-right::after {
       left: 15px;
@@ -173,6 +177,8 @@ mzd-timeline-content {
     }
 
     &.content-left {
+      left: 0;
+      right: auto;
       mzd-icon {
         left: 23px;
         right: auto;
