@@ -1,5 +1,6 @@
 import {
-  AfterViewInit, Component, ContentChildren, Input, OnInit, QueryList, ViewEncapsulation
+  AfterViewInit, Component, ContentChildren, Input, OnChanges, OnInit, QueryList, SimpleChanges,
+  ViewEncapsulation
 } from '@angular/core';
 import { MzdTimelineContentComponent } from '../timeline-content/timeline-content.component';
 
@@ -9,7 +10,7 @@ import { MzdTimelineContentComponent } from '../timeline-content/timeline-conten
   styleUrls: ['./timeline.component.scss'],
   encapsulation: ViewEncapsulation.None
 })
-export class MzdTimelineComponent implements OnInit, AfterViewInit {
+export class MzdTimelineComponent implements OnInit, AfterViewInit, OnChanges {
 
   @Input() firstContentSide: 'left' | 'right' = 'left';
   @Input() alternateSide: boolean = true;
@@ -17,13 +18,17 @@ export class MzdTimelineComponent implements OnInit, AfterViewInit {
 
   constructor() { }
 
+  ngOnChanges(changes: SimpleChanges): void {
+    this.updateContent();
+  }
+
   ngOnInit(): void { }
 
   ngAfterViewInit(): void {
     this.updateContent();
   }
 
-  private updateContent() {
+  private updateContent(): void {
     if (this.contents) {
       if (this.alternateSide) {
         if (this.firstContentSide === 'left') {
