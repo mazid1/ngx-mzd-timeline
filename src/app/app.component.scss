@@ -1,14 +1,18 @@
+@import '~@angular/material/theming';
+
 .mzd-app-toolbar {
   margin-bottom: 10px;
   display: flex;
   flex-direction: row;
+  @include mat-elevation(8);
 }
 
-.mzd-app-button-container {
-  text-align: center;
-  margin-bottom: 10px;
+.mzd-app-section {
+  align-content: center;
+  align-items: center;
+  height: 30px;
+}
 
-  :not(:last-child) {
-    margin-right: 10px;
-  }
+.mzd-app-margin {
+  margin: 0 10px;
 }

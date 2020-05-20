@@ -7,13 +7,17 @@
   </mat-slide-toggle>
 </mat-toolbar>
 
-<div class="mzd-app-button-container">
-  <button mat-raised-button color="primary">Primary</button>
-  <button mat-raised-button color="accent">Accent</button>
-  <button mat-raised-button color="warn">Warn</button>
-</div>
+<section class="mzd-app-section">
+  <mat-checkbox labelPosition="before" [(ngModel)]="alternateSide" class="mzd-app-margin">Alternate side</mat-checkbox>
+</section>
 
-<div id="mzdAppTitle" style="text-align: center;"><h1>{{ title }} app is running!</h1></div>
+<section class="mzd-app-section">
+  <label id="radio-label" class="mzd-app-margin">First content side:</label>
+  <mat-radio-group aria-labelledby="radio-label" [(ngModel)]="firstContentSide">
+    <mat-radio-button labelPosition="before" value="left" class="mzd-app-margin">Left</mat-radio-button>
+    <mat-radio-button labelPosition="before" value="right" class="mzd-app-margin">Right</mat-radio-button>
+  </mat-radio-group>
+</section>
 
 <mzd-timeline [alternateSide]="true" firstContentSide="left">
   

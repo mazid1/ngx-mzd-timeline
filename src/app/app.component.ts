@@ -9,6 +9,9 @@ import { ThemeService } from './theme.service';
 export class AppComponent {
   title = 'mzd-timeline';
 
+  alternateSide: boolean = true;
+  firstContentSide: 'left' | 'right' = 'left';
+
   constructor(private themeService: ThemeService) { }
 
   setDarkMode(darkMode: boolean) {

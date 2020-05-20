@@ -1,8 +1,11 @@
 import { MzdTimelineModule } from 'projects/mzd-timeline/src/public-api';
 import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 import { MatButtonModule } from '@angular/material/button';
 import { MatCardModule } from '@angular/material/card';
+import { MatCheckboxModule } from '@angular/material/checkbox';
 import { MatCommonModule } from '@angular/material/core';
+import { MatRadioModule } from '@angular/material/radio';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { BrowserModule } from '@angular/platform-browser';
@@ -25,14 +28,17 @@ import { AppComponent } from './app.component';
   ],
   imports: [
     BrowserModule,
-    MzdTimelineModule,
     BrowserAnimationsModule,
+    FormsModule,
     FontAwesomeModule,
+    MzdTimelineModule,
     MatCardModule,
     MatToolbarModule,
     MatButtonModule,
     MatCommonModule,
-    MatSlideToggleModule
+    MatSlideToggleModule,
+    MatCheckboxModule,
+    MatRadioModule
   ],
   providers: [],
   bootstrap: [AppComponent]
