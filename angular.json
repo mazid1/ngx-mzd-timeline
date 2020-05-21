@@ -124,38 +124,38 @@
         }
       }
     },
-    "mzd-timeline": {
+    "ngx-mzd-timeline": {
       "projectType": "library",
-      "root": "projects/mzd-timeline",
-      "sourceRoot": "projects/mzd-timeline/src",
+      "root": "projects/ngx-mzd-timeline",
+      "sourceRoot": "projects/ngx-mzd-timeline/src",
       "prefix": "mzd",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-ng-packagr:build",
           "options": {
-            "tsConfig": "projects/mzd-timeline/tsconfig.lib.json",
-            "project": "projects/mzd-timeline/ng-package.json"
+            "tsConfig": "projects/ngx-mzd-timeline/tsconfig.lib.json",
+            "project": "projects/ngx-mzd-timeline/ng-package.json"
           },
           "configurations": {
             "production": {
-              "tsConfig": "projects/mzd-timeline/tsconfig.lib.prod.json"
+              "tsConfig": "projects/ngx-mzd-timeline/tsconfig.lib.prod.json"
             }
           }
         },
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
-            "main": "projects/mzd-timeline/src/test.ts",
-            "tsConfig": "projects/mzd-timeline/tsconfig.spec.json",
-            "karmaConfig": "projects/mzd-timeline/karma.conf.js"
+            "main": "projects/ngx-mzd-timeline/src/test.ts",
+            "tsConfig": "projects/ngx-mzd-timeline/tsconfig.spec.json",
+            "karmaConfig": "projects/ngx-mzd-timeline/karma.conf.js"
           }
         },
         "lint": {
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
             "tsConfig": [
-              "projects/mzd-timeline/tsconfig.lib.json",
-              "projects/mzd-timeline/tsconfig.spec.json"
+              "projects/ngx-mzd-timeline/tsconfig.lib.json",
+              "projects/ngx-mzd-timeline/tsconfig.spec.json"
             ],
             "exclude": [
               "**/node_modules/**"
