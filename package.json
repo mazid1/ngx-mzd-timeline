@@ -1,6 +1,25 @@
 {
   "name": "mzd-timeline-app",
-  "version": "0.0.0",
+  "version": "0.0.1",
+  "description": "Minimalist's vertical timeline library for Angular applications.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mazid1/ngx-mzd-timeline.git"
+  },
+  "keywords": [
+    "angular",
+    "javascript",
+    "timeline",
+    "ngx",
+    "ngx-timeline",
+    "angular-material"
+  ],
+  "author": "Mohammad Mazedul Islam (mazidmailbox@gmail.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mazid1/ngx-mzd-timeline/issues"
+  },
+  "homepage": "https://github.com/mazid1/ngx-mzd-timeline#readme",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
