@@ -21,21 +21,23 @@
 
 <mzd-timeline [alternateSide]="alternateSide" [firstContentSide]="firstContentSide">
   
+  <!-- mzd-timeline-card no-border -->
   <mzd-timeline-content>
     <div>
-      <h1>Title</h1>
+      <h1>Custom-card with No-border</h1>
       <hr>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut tempora dolor ullam exercitationem illum enim id maxime sunt eius, neque repellat corporis atque voluptatibus quasi nam necessitatibus odit commodi quisquam?</p>
     </div>
     <mzd-icon><fa-icon icon="briefcase"></fa-icon></mzd-icon>
   </mzd-timeline-content>
   
+  <!-- no-mzd-timeline-card mat-card no-border -->
   <mzd-timeline-content [card]="false">
     <mzd-icon><strong>X</strong></mzd-icon>
     <mat-card>
       <mat-card-header>
         <mat-card-title>
-          This is a Title
+          Mat-card with No-border
         </mat-card-title>
         <mat-card-subtitle>
           20-05-2020
@@ -48,12 +50,13 @@
     </mat-card>
   </mzd-timeline-content>
 
-  <mzd-timeline-content [card]="false" [border]="true">
+  <!-- mzd-timeline-card mat-card mzd-timeline-border -->
+  <mzd-timeline-content [card]="true" [border]="true">
     <mzd-icon><fa-icon icon="camera"></fa-icon></mzd-icon>
     <mat-card>
       <mat-card-header>
         <mat-card-title>
-          This is a Title
+          Mat-card inside Custom-card with Border
         </mat-card-title>
         <mat-card-subtitle>
           20-05-2020
@@ -66,10 +69,21 @@
     </mat-card>
   </mzd-timeline-content>
 
+  <!-- mzd-timeline-card mzd-timeline-border -->
   <mzd-timeline-content [border]="true">
-    <mzd-icon><fa-icon icon="skiing-nordic"></fa-icon></mzd-icon>
+    <mzd-icon><fa-icon icon="bell"></fa-icon></mzd-icon>
     <div>
-      <h1>Title</h1>
+      <h1>Custom-card with Border</h1>
+      <hr>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut tempora dolor ullam exercitationem illum enim id maxime sunt eius, neque repellat corporis atque voluptatibus quasi nam necessitatibus odit commodi quisquam?</p>
+    </div>
+  </mzd-timeline-content>
+
+  <!-- mzd-timeline-border -->
+  <mzd-timeline-content [card]="false" [border]="true">
+    <mzd-icon><fa-icon icon="envelope-open"></fa-icon></mzd-icon>
+    <div style="padding: 16px;">
+      <h1>No-card with Border</h1>
       <hr>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut tempora dolor ullam exercitationem illum enim id maxime sunt eius, neque repellat corporis atque voluptatibus quasi nam necessitatibus odit commodi quisquam?</p>
     </div>

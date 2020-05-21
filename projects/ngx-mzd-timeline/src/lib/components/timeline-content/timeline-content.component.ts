@@ -8,8 +8,8 @@ import { Component, ElementRef, Input, OnInit, ViewEncapsulation } from '@angula
 })
 export class MzdTimelineContentComponent implements OnInit {
 
-  @Input() card = true;
-  @Input() border = false;
+  @Input() card: boolean = true;
+  @Input() border: boolean = false;
 
   set left(value: boolean) {
     this.elementRef.nativeElement.classList.toggle('content-left', value);

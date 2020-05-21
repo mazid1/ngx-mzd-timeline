@@ -18,15 +18,6 @@
         color: mat-color($mzd-timeline-foreground, base);
       }
 
-      & .mzd-timeline-border {
-        &:not(.mzd-timeline-card) {
-          @include mat-elevation(1);
-        }
-        & .mat-card {
-          @include mat-elevation(0);
-        }
-      }
-
       &::after {
         background-color: mat-color($mzd-timeline-background, card);
         border: 2px solid mat-color($mzd-timeline-accent);
