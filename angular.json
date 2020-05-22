@@ -1,6 +1,6 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
-  "version": 1, 
+  "version": 1,
   "newProjectRoot": "projects",
   "projects": {
     "mzd-timeline-app": {
@@ -121,6 +121,10 @@
               "devServerTarget": "mzd-timeline-app:serve:production"
             }
           }
+        },
+        "deploy": {
+          "builder": "angular-cli-ghpages:deploy",
+          "options": {}
         }
       }
     },
@@ -163,6 +167,7 @@
           }
         }
       }
-    }},
+    }
+  },
   "defaultProject": "mzd-timeline-app"
 }
