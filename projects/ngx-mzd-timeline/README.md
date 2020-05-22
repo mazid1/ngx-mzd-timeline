@@ -19,7 +19,7 @@ import { MzdTimelineModule } from 'ngx-mzd-timeline';
   ...
   imports: [
     ...
-    MglTimelineModule
+    MzdTimelineModule
   ]
 })
 export class AppModule { }
