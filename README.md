@@ -1,6 +1,6 @@
 # ngx-mzd-timeline
 
-Angular material theme supported minimalist's vertical timeline library for Angular applications. 
+Angular material theme supported minimalist's vertical timeline library for Angular applications.
 
 ## Live Demo
 
