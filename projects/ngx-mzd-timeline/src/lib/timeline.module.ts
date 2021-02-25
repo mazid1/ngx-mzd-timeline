@@ -1,5 +1,5 @@
 import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
+import { CommonModule } from '@angular/common';
 import { MzdIconComponent } from './components/icon/icon.component';
 import {
   MzdTimelineContentComponent
@@ -9,7 +9,7 @@ import { MzdTimelineComponent } from './components/timeline/timeline.component';
 @NgModule({
   declarations: [MzdTimelineComponent, MzdTimelineContentComponent, MzdIconComponent],
   imports: [
-    BrowserModule
+    CommonModule
   ],
   exports: [MzdTimelineComponent, MzdTimelineContentComponent, MzdIconComponent]
 })
