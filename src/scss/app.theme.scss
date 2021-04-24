@@ -1,0 +1,22 @@
+@import "~@angular/material/theming";
+
+@mixin mzd-app-theme($theme) {
+  $mzd-app-primary: map-get($theme, primary);
+  $mzd-app-accent: map-get($theme, accent);
+  $mzd-app-warn: map-get($theme, warn);
+  $mzd-app-typographyConfig: mat-typography-config();
+
+  footer {
+    font-family: mat-font-family($mzd-app-typographyConfig);
+    background-color: mat-color($mzd-app-primary) !important;
+    color: white;
+    .footer-content {
+      a {
+        color: mat-color($mzd-app-accent);
+        &:hover {
+          color: lighten(mat-color($mzd-app-accent), 10%);
+        }
+      }
+    }
+  }
+}
