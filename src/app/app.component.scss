@@ -1,4 +1,4 @@
-@import '~@angular/material/theming';
+@import "~@angular/material/theming";
 
 .mzd-app-toolbar {
   margin-bottom: 10px;
@@ -15,4 +15,20 @@
 
 .mzd-app-margin {
   margin: 0 10px;
+}
+
+.mzd-app-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 64px;
+  padding: 0 16px;
+  font-size: 1.2rem;
+
+  .footer-content {
+    a {
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+  }
 }
