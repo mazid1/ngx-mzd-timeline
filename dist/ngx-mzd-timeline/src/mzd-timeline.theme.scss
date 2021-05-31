@@ -1,0 +1,31 @@
+@import '~@angular/material/theming';
+
+@mixin mzd-timeline-theme($theme) {
+  $mzd-timeline-primary: map-get($theme, primary);
+  $mzd-timeline-accent: map-get($theme, accent);
+  $mzd-timeline-warn: map-get($theme, warn);
+  $mzd-timeline-foreground: map-get($theme, foreground);
+  $mzd-timeline-background: map-get($theme, background);
+  $mzd-timeline-typographyConfig: mat-typography-config();
+
+  mzd-timeline {
+    font-family: mat-font-family($mzd-timeline-typographyConfig);
+
+    & mzd-timeline-content {
+      & .mzd-timeline-card {
+        @include mat-elevation(1);
+        background-color: mat-color($mzd-timeline-background, card) !important;
+        color: mat-color($mzd-timeline-foreground, base);
+      }
+
+      &::after {
+        background-color: mat-color($mzd-timeline-background, card);
+        border: 2px solid mat-color($mzd-timeline-accent);
+      }
+
+      mzd-icon {
+        color: mat-color($mzd-timeline-foreground, base);
+      }
+    }
+  }
+}
