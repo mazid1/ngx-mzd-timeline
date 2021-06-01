@@ -26,7 +26,8 @@
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "build:lib": "ng-packagr -p projects/ngx-mzd-timeline/ng-package.json"
   },
   "private": true,
   "dependencies": {
