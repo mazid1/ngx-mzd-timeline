@@ -26,13 +26,5 @@
   },
   "dependencies": {
     "tslib": "^2.0.0"
-  },
-  "main": "bundles/ngx-mzd-timeline.umd.js",
-  "module": "fesm2015/ngx-mzd-timeline.js",
-  "es2015": "fesm2015/ngx-mzd-timeline.js",
-  "esm2015": "esm2015/ngx-mzd-timeline.js",
-  "fesm2015": "fesm2015/ngx-mzd-timeline.js",
-  "typings": "ngx-mzd-timeline.d.ts",
-  "metadata": "ngx-mzd-timeline.metadata.json",
-  "sideEffects": false
+  }
 }
