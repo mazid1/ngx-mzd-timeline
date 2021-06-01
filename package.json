@@ -73,13 +73,5 @@
     "ts-node": "~8.10.2",
     "tslint": "~6.1.0",
     "typescript": "~4.1.5"
-  },
-  "main": "dist/ngx-mzd-timeline/bundles/ngx-mzd-timeline.umd.js",
-  "module": "dist/ngx-mzd-timeline/fesm2015/ngx-mzd-timeline.js",
-  "es2015": "dist/ngx-mzd-timeline/fesm2015/ngx-mzd-timeline.js",
-  "esm2015": "dist/ngx-mzd-timeline/esm2015/ngx-mzd-timeline.js",
-  "fesm2015": "dist/ngx-mzd-timeline/fesm2015/ngx-mzd-timeline.js",
-  "typings": "dist/ngx-mzd-timeline/ngx-mzd-timeline.d.ts",
-  "metadata": "dist/ngx-mzd-timeline/ngx-mzd-timeline.metadata.json",
-  "sideEffects": false
+  }
 }
