@@ -27,12 +27,12 @@
   "dependencies": {
     "tslib": "^2.0.0"
   },
-  "main": "bundles/ngx-mzd-timeline.umd.js",
-  "module": "fesm2015/ngx-mzd-timeline.js",
-  "es2015": "fesm2015/ngx-mzd-timeline.js",
-  "esm2015": "esm2015/ngx-mzd-timeline.js",
-  "fesm2015": "fesm2015/ngx-mzd-timeline.js",
-  "typings": "ngx-mzd-timeline.d.ts",
-  "metadata": "ngx-mzd-timeline.metadata.json",
+  "main": "dist/ngx-mzd-timeline/bundles/ngx-mzd-timeline.umd.js",
+  "module": "dist/ngx-mzd-timeline/fesm2015/ngx-mzd-timeline.js",
+  "es2015": "dist/ngx-mzd-timeline/fesm2015/ngx-mzd-timeline.js",
+  "esm2015": "dist/ngx-mzd-timeline/esm2015/ngx-mzd-timeline.js",
+  "fesm2015": "dist/ngx-mzd-timeline/fesm2015/ngx-mzd-timeline.js",
+  "typings": "dist/ngx-mzd-timeline/ngx-mzd-timeline.d.ts",
+  "metadata": "dist/ngx-mzd-timeline/ngx-mzd-timeline.metadata.json",
   "sideEffects": false
 }
